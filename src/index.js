@@ -7,13 +7,13 @@ module.exports = function makeExchange(currency) {
        "Q":25,
        "D":10,
        "N":5,
-       "p":1
+       "P":1
    };
    var currentCurrency = currencyl
    var result = {};
    
    for (var key in currencies) {
-       if (currentCurrency >= currencies [Key]) {
+       if (currentCurrency >= currencies [key]) {
            var value = Math.floor(currentCurrency) / currencies[key]);
            result[key] = value;
            currentCurrency -= value * currencies[key];
